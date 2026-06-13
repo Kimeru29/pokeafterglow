@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GBC: Build and Launch pokeafterglow debug",
+      "type": "emulicious-debugger",
+      "request": "launch",
+      "preLaunchTask": "build pokeafterglow debug",
+      "program": "${workspaceFolder}/pokecrystal_debug.gbc",
+      "emuliciousPath": "/Users/juan.pena/Dev/romhacking/tools/bin/emulicious",
+      "host": "127.0.0.1",
+      "port": 58870,
+      "stopOnEntry": true,
+      "additionalSrcFolders": "${workspaceFolder}"
+    },
+    {
+      "name": "GBC: Launch existing pokeafterglow debug",
+      "type": "emulicious-debugger",
+      "request": "launch",
+      "program": "${workspaceFolder}/pokecrystal_debug.gbc",
+      "emuliciousPath": "/Users/juan.pena/Dev/romhacking/tools/bin/emulicious",
+      "host": "127.0.0.1",
+      "port": 58870,
+      "stopOnEntry": true,
+      "additionalSrcFolders": "${workspaceFolder}"
+    },
+    {
+      "name": "GBC: Attach to Running Emulicious",
+      "type": "emulicious-debugger",
+      "request": "attach",
+      "host": "127.0.0.1",
+      "port": 58870,
+      "additionalSrcFolders": "${workspaceFolder}"
+    }
+  ]
+}
