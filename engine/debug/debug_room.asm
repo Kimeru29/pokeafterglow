@@ -1598,9 +1598,7 @@ ComputeROMChecksum:
 	pop bc
 	call ComputeROMXChecksum
 	inc c
-	ld a, c
-	cp $80 ; number of banks
-	jr c, .loop
+	jr nz, .loop ; loop until c wraps from $FF to $00
 	ld a, d
 	ld [wDebugRoomROMChecksum + 0], a
 	ld a, e
