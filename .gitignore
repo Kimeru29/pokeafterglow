@@ -37,3 +37,12 @@ gfx/pokemon/*/frames.asm
 *.sn*
 *.sa*
 *.sg1
+
+# Local IDE/debug configuration
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/*.local.json
+.vscode/settings.local.json
+
+# Local .NET launch profiles
+**/Properties/launchSettings.json
